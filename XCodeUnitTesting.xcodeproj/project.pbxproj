@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5119F28C22020E8D0060B268 /* TestMyApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5119F28B22020E8D0060B268 /* TestMyApplication.swift */; };
 		5176B1DD2202008C008B9F1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5176B1DC2202008C008B9F1E /* AppDelegate.swift */; };
 		5176B1DF2202008C008B9F1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5176B1DE2202008C008B9F1E /* ViewController.swift */; };
 		5176B1E22202008C008B9F1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5176B1E02202008C008B9F1E /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5119F28B22020E8D0060B268 /* TestMyApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMyApplication.swift; sourceTree = "<group>"; };
 		5176B1D92202008C008B9F1E /* XCodeUnitTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCodeUnitTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5176B1DC2202008C008B9F1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5176B1DE2202008C008B9F1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			children = (
 				5176B1FC2202008E008B9F1E /* XCodeUnitTestingUITests.swift */,
 				5176B1FE2202008E008B9F1E /* Info.plist */,
+				5119F28B22020E8D0060B268 /* TestMyApplication.swift */,
 			);
 			path = XCodeUnitTestingUITests;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5119F28C22020E8D0060B268 /* TestMyApplication.swift in Sources */,
 				5176B1FD2202008E008B9F1E /* XCodeUnitTestingUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +439,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V94L67MHG8;
 				INFOPLIST_FILE = XCodeUnitTesting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +458,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V94L67MHG8;
 				INFOPLIST_FILE = XCodeUnitTesting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
