@@ -10,16 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var switchEnableButton: UISwitch!
     
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var textFieldResult: UITextField!
     @IBAction func testButtonTapped(_ sender: Any) {
-        if(switchEnableButton.isOn)
+        var object = MyObjectiveC()
+        
+        if(segmentedControl.selectedSegmentIndex==0)
         {
-            textFieldResult.text = "The button works!"
+            textFieldResult.text = object.callObject(fromSwift: "Hello from swift")
         }
         else{
-            textFieldResult.text="The switch is turned off"
+            textFieldResult.text = MyObjectiveC.callMe("Hello from swift class")
         }
     }
     

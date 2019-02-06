@@ -31,9 +31,12 @@ class TestMyApplication: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
         let app = XCUIApplication()
+        app/*@START_MENU_TOKEN@*/.buttons["Off"]/*[[".segmentedControls.buttons[\"Off\"]",".buttons[\"Off\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         app.buttons["Tap button to do something"].tap()
+        
+        
         let typedText = app.textFields["Result of test"].value as! String
-        XCTAssertEqual("this works", typedText, "text field is not correct")
+        XCTAssertEqual("The button works!", typedText, "text field is not correct")
     }
 
 }
