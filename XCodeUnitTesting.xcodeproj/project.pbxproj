@@ -15,6 +15,8 @@
 		5176B1E72202008E008B9F1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5176B1E52202008E008B9F1E /* LaunchScreen.storyboard */; };
 		5176B1F22202008E008B9F1E /* XCodeUnitTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5176B1F12202008E008B9F1E /* XCodeUnitTestingTests.swift */; };
 		5176B1FD2202008E008B9F1E /* XCodeUnitTestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5176B1FC2202008E008B9F1E /* XCodeUnitTestingUITests.swift */; };
+		5187C8A6220A66E9001B6118 /* MyObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5187C8A5220A66E9001B6118 /* MyObjectiveC.m */; };
+		5187C8A9220A66FC001B6118 /* MyCPPClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5187C8A8220A66FC001B6118 /* MyCPPClass.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,12 @@
 		5176B1F82202008E008B9F1E /* XCodeUnitTestingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCodeUnitTestingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5176B1FC2202008E008B9F1E /* XCodeUnitTestingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCodeUnitTestingUITests.swift; sourceTree = "<group>"; };
 		5176B1FE2202008E008B9F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5187C8A4220A66E8001B6118 /* XCodeUnitTesting-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XCodeUnitTesting-Bridging-Header.h"; sourceTree = "<group>"; };
+		5187C8A5220A66E9001B6118 /* MyObjectiveC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObjectiveC.m; sourceTree = "<group>"; };
+		5187C8A7220A66F0001B6118 /* MyObjectiveC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyObjectiveC.h; sourceTree = "<group>"; };
+		5187C8A8220A66FC001B6118 /* MyCPPClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyCPPClass.cpp; sourceTree = "<group>"; };
+		5187C8AA220A6704001B6118 /* MyCPPClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyCPPClass.hpp; sourceTree = "<group>"; };
+		5187C8AC220A6826001B6118 /* libPocoFoundation.60.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libPocoFoundation.60.dylib; path = "../../Downloads/poco-1.9.0/cmake-build/lib/libPocoFoundation.60.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,7 @@
 				5176B1F02202008E008B9F1E /* XCodeUnitTestingTests */,
 				5176B1FB2202008E008B9F1E /* XCodeUnitTestingUITests */,
 				5176B1DA2202008C008B9F1E /* Products */,
+				5187C8AB220A6826001B6118 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +108,17 @@
 		5176B1DB2202008C008B9F1E /* XCodeUnitTesting */ = {
 			isa = PBXGroup;
 			children = (
+				5187C8AA220A6704001B6118 /* MyCPPClass.hpp */,
+				5187C8A8220A66FC001B6118 /* MyCPPClass.cpp */,
+				5187C8A7220A66F0001B6118 /* MyObjectiveC.h */,
+				5187C8A5220A66E9001B6118 /* MyObjectiveC.m */,
 				5176B1DC2202008C008B9F1E /* AppDelegate.swift */,
 				5176B1DE2202008C008B9F1E /* ViewController.swift */,
 				5176B1E02202008C008B9F1E /* Main.storyboard */,
 				5176B1E32202008E008B9F1E /* Assets.xcassets */,
 				5176B1E52202008E008B9F1E /* LaunchScreen.storyboard */,
 				5176B1E82202008E008B9F1E /* Info.plist */,
+				5187C8A4220A66E8001B6118 /* XCodeUnitTesting-Bridging-Header.h */,
 			);
 			path = XCodeUnitTesting;
 			sourceTree = "<group>";
@@ -126,6 +140,14 @@
 				5119F28B22020E8D0060B268 /* TestMyApplication.swift */,
 			);
 			path = XCodeUnitTestingUITests;
+			sourceTree = "<group>";
+		};
+		5187C8AB220A6826001B6118 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5187C8AC220A6826001B6118 /* libPocoFoundation.60.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +218,7 @@
 				TargetAttributes = {
 					5176B1D82202008C008B9F1E = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					5176B1EC2202008E008B9F1E = {
 						CreatedOnToolsVersion = 10.1;
@@ -260,6 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5176B1DF2202008C008B9F1E /* ViewController.swift in Sources */,
+				5187C8A6220A66E9001B6118 /* MyObjectiveC.m in Sources */,
+				5187C8A9220A66FC001B6118 /* MyCPPClass.cpp in Sources */,
 				5176B1DD2202008C008B9F1E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,7 +392,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Users/etorunski/Downloads/poco-1.9.0/Foundation/include";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LIBRARY_SEARCH_PATHS = "/Users/etorunski/Downloads/poco-1.9.0/cmake-build/lib";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +449,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Users/etorunski/Downloads/poco-1.9.0/Foundation/include";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LIBRARY_SEARCH_PATHS = "/Users/etorunski/Downloads/poco-1.9.0/cmake-build/lib";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -436,16 +465,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V94L67MHG8;
+				HEADER_SEARCH_PATHS = /Users/etorunski/Downloads/boost_1_69_0/;
 				INFOPLIST_FILE = XCodeUnitTesting/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.algonquincollege.madd.XCodeUnitTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XCodeUnitTesting/XCodeUnitTesting-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,16 +489,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V94L67MHG8;
+				HEADER_SEARCH_PATHS = /Users/etorunski/Downloads/boost_1_69_0/;
 				INFOPLIST_FILE = XCodeUnitTesting/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.algonquincollege.madd.XCodeUnitTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XCodeUnitTesting/XCodeUnitTesting-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

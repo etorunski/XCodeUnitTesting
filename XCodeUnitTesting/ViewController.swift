@@ -14,11 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var textFieldResult: UITextField!
     @IBAction func testButtonTapped(_ sender: Any) {
-     /*   var object = MyObjectiveC()
-        
-        if(segmentedControl.selectedSegmentIndex==0)
-        {
-            textFieldResult.text = object.callObject(fromSwift: "Hello from swift")
+        SimpleClass.sendMeAString("Hello Objective-C")
+        /*textFieldResult.text = object.callObject(fromSwift: "Hello from swift")
         }
         else{
             textFieldResult.text = MyObjectiveC.callMe("Hello from swift class")
