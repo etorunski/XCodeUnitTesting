@@ -7,21 +7,17 @@
 //
 
 #include "MyCPPClass.hpp"
-#include <string.h>
-#include <boost/math/distributions/normal.hpp>
-#include <boost/math/common_factor.hpp>
 
-using boost::math::normal;
 
 extern "C"{
-    int sendToCpp(char* rawCharacters)
-    {
-        normal dist(0, 2);
-        double n = dist.mean();
-        double num = cdf(dist, 0.0);
-        boost::math::gcd(10, 5);
-        boost::math::lcm(6, 15);
+    
+    int sendToCpp(char* str){
         
-        return strlen(rawCharacters);
+        return 0;
+    }
+    
+    int sendTwoStrings(char* str1, char *str2){
+        
+        return 3;
     }
 }

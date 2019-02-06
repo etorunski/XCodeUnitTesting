@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var textFieldResult: UITextField!
     @IBAction func testButtonTapped(_ sender: Any) {
         SimpleClass.sendMeAString("Hello Objective-C")
+        
+        SimpleClass.sendMeString("Hello", andString2: "Objective C")
+        
         /*textFieldResult.text = object.callObject(fromSwift: "Hello from swift")
         }
         else{

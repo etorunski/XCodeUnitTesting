@@ -10,6 +10,18 @@
 #import "MyObjectiveC.h"
 
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+    
+    int sendToCpp(char*); //prototyping a function that will be in C++.
+    int sendTwoStrings(char* , char *);
+    
+#ifdef __cplusplus
+}
+#endif
+
+
 @implementation SimpleClass
 
 -(void) aFunction
@@ -22,12 +34,17 @@
 {
     NSLog(@"In sendMeAString:");
     NSLog(param);
+    
+    sendToCpp("Hello CPP");
 }
+
 +(void) sendMeString:(NSString*)str1  andString2:(NSString*)str2
 {
     NSLog(@"In sendMeAString:");
     NSLog(str1);
     NSLog(str2);
+    
+    sendTwoStrings((char*)[str1 UTF8String], (char*)[str2 UTF8String]);
 }
 //@property NSString *privateName;
 @end
