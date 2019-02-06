@@ -7,12 +7,13 @@
 //
 
 #include "MyCPPClass.hpp"
-
+#include <boost/math/common_factor.hpp>
 
 extern "C"{
     
     int sendToCpp(char* str){
         
+        int l = boost::math::lcm(5, 7);
         return 0;
     }
     
