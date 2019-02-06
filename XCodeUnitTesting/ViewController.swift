@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var textFieldResult: UITextField!
     @IBAction func testButtonTapped(_ sender: Any) {
-        var object = MyObjectiveC()
+     /*   var object = MyObjectiveC()
         
         if(segmentedControl.selectedSegmentIndex==0)
         {
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         }
         else{
             textFieldResult.text = MyObjectiveC.callMe("Hello from swift class")
-        }
+        }*/
     }
     
     override func viewDidLoad() {
